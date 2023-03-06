@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Immobiliare</title>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+    <!-- MENU -->
+    <header class="header">
+        <div class="header__content">
+            <a class="header__logo" href="index.html">
+                <strong>Immobiliare</strong>
+            </a>
+            <ul class="header__menu">
+                <li><a href="#"> Cerca Annuncio</a></li>
+                <li><a href="#"> Pubblica Annuncio</a></li>
+                <li><a href="accedi.html"> Accedi</a></li>
+                <li><a href="chiSiamo.html"> Chi siamo</a></li>
+                <li><a href="contattaci.html"> Contattaci</a></li>
+                <li><a href="privacy.html"> Privacy </a></li>
+            </ul>
+            <div class="header__quick">
+                <div class="icon-hamburger">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        let item = document.querySelector('.icon-hamburger');
+        item.addEventListener("click", function() {
+            document.body.classList.toggle('menu-open');
+        });
+    </script>
+    <!-- FINE MENU -->
+
+    <div class="spacer"></div>
+
+    <img src="loghi/logo.png" text-align="center" height="50%" width="50%" >
+
+
+
+
+
+
+
+
+</body>
+
+</html>

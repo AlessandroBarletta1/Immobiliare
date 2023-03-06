@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8">
+    <title>Accedi</title>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<section>
+
+    <!-- MENU -->
+    <header class="header">
+        <div class="header__content">
+            <a class="header__logo" href="index.html">
+                <strong>Immobiliare</strong>
+            </a>
+            <ul class="header__menu">
+                <li><a href="#"> Cerca Annuncio</a></li>
+                <li><a href="#"> Pubblica Annuncio</a></li>
+                <li><a href="accedi.html"> Accedi</a></li>
+                <li><a href="chiSiamo.html"> Chi siamo</a></li>
+                <li><a href="contattaci.html"> Contattaci</a></li>
+                <li><a href="privacy.html"> Privacy </a></li>
+            </ul>
+            <div class="header__quick">
+                <div class="icon-hamburger">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        let item = document.querySelector('.icon-hamburger');
+        item.addEventListener("click", function() {
+            document.body.classList.toggle('menu-open');
+        });
+    </script>
+    <!-- FINE MENU -->
+
+
+    <div class="cover" style="background-image:linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('loghi/background.jpg');">
+        <div class="cover__content">
+            <h1>Accedi</h1>
+            <h2>Subtitie</h2>
+            <a href="#" class="button">Call to action</a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class = "form-box">
+        <div class = "form-value">
+            <form action= "">
+                <h2>Login</h2>
+                <div class= "inputbox">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input type= "email" required>
+                    <label for= "">Email</label>
+                </div>
+                <div class= "inputbox">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type= "password" required>
+                    <label for= "">Password</label>
+                </div>
+                <div class="forget">
+                    <label for=""><input type="checkbox">Ricordati di me  <a href ="#">Password Dimenticata</a></label>
+
+                </div>
+                <button>Log in</button>
+                <div class= "register">
+                    <p>Non ho un account <a href="#">Registrati</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
