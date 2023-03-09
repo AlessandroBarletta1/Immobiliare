@@ -1,7 +1,12 @@
 /* ! Reset */
 body, html{ font-family: 'Inter', Arial, Helvetica, sans-serif; font-size: 16px; box-sizing: border-box;margin: 0;padding: 0;}*,*:before,*:after{ box-sizing: border-box; }h1,h2,h3,h4,h5,h6, p, ol, ul{margin: 0 0 1rem 0;padding: 0;}ol,ul{list-style-type: none;}img{height: auto;}h1{font-size: 4rem;} h2{font-size: 3rem;} h3{font-size: 2rem;} h4{font-size: 1rem;} h5{font-size: 0.8rem;} h6{font-size: 0.6rem;}a{text-decoration:none}
 
-.spacer { height: 100px; }
+.spacer1 { height: 10px; }
+.spacer2 { height: 25px; }
+.spacer3 { height: 50px; }
+.spacer4 { height: 69px; }
+.spacer5 { height: 100px; }
+
 /* Menu */
 :root { --menu-bg: #2596be; --menu-color: #fff; }
 
@@ -39,7 +44,8 @@ h2, .text-2 {font-size: 2.4rem; margin-bottom:1rem}
 h3, .text-3  {font-size: 1.8rem; margin-bottom:1rem}
 h4, p, .text-4 {font-size: 1rem; margin-bottom:1rem; line-height: 1.5;}
 h5, p2, .text-5 {font-size: 0.8rem; margin-bottom:1rem; ;}
-a{color: #2596be}
+a {color: white; }
+
 
 /* ! Button System */
 .button {
@@ -47,7 +53,7 @@ a{color: #2596be}
     text-decoration: none;padding: 14px 25px; display: inline-block;
     border-radius: 4px; font-weight: 700;
 }
-.button:hover{ background: #444; }
+.button:hover{ background: #2596be; }
 
 /* ! Cover */
 .cover{
@@ -55,7 +61,13 @@ a{color: #2596be}
     display:flex; flex-direction:column; justify-content:center;
     background-position: center center; background-size:cover;
 }
-.cover * {color:#fff}
+.cover * {color: #fff; }
+
+.cover input { color: black; min-width: 300px; }
+.cover select { color: black;  min-width: 300px; margin-bottom: 10px; margin-top: 10px; }
+.cover option { color: black; margin-bottom: 10px; margin-top: 10px; }
+
+
 
 /* ! Grid System */
 .grid { margin: 0 auto; padding: 0 15px; max-width: 1250px; display: flex; flex-flow: row; flex-wrap: wrap;}
@@ -90,3 +102,10 @@ a{color: #2596be}
     .sma-50 { width: 50%; }
     .sma-100 { width: 100%; }
 }
+
+.box{  text-align: right; padding-right: 50px; margin:10px; min-height:10px; display: inline-block ; flex-direction:column; }
+
+
+.footer { background-color: #2596be; width: 100%; height: 50px; display: flex; justify-content: center;}
+.footer-menu { display: flex; height: 100%; align-items: center;}
+.footer-menu a { padding-right: 20px; }

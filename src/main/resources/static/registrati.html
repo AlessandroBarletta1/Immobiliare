@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registrati</title>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <!-- MENU -->
+    <header class="header">
+        <div class="header__content">
+            <a class="header__logo" href="index.html">
+                <strong>Immobiliare</strong>
+            </a>
+            <ul class="header__menu">
+                <li><a href="#"> Cerca Annuncio</a></li>
+                <li><a href="#"> Pubblica Annuncio</a></li>
+                <li><a href="accedi.html"> Accedi</a></li>
+            </ul>
+            <div class="header__quick">
+                <div class="icon-hamburger">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        let item = document.querySelector('.icon-hamburger');
+        item.addEventListener("click", function() {
+            document.body.classList.toggle('menu-open');
+        });
+    </script>
+    <!-- FINE MENU -->
+
+    <div class="spacer4"></div>
+
+    <!-- REGISTRAZIONE -->
+    <div class="cover" style="background-image:linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('loghi/background.jpg');">
+        <div class = "cover__content">
+            <h2>Registrazione</h2>
+
+            <div class="box">
+                <label>Nome:</label>
+                <input type="text" id="idNome" placeholder="inserisci il tuo nome"><br><br>
+                <label>Cognome:</label>
+                <input type="text" id="idCognome" placeholder="inserisci il tuo cognome"><br><br>
+                <label>Indirizzo:</label>
+                <input type="text" id="idIndirizzo" placeholder="inserisci la tua via e numero"><br><br>
+                <label>Cellulare:</label>
+                <input type="text" id="idCell" placeholder="inserisci il tuo numero"><br><br>
+                <label>Codice Fiscale:</label>
+                <input type="text" id="idCF" placeholder="inserisci il tuo codice fiscale"><br><br>
+                <label>Genere:</label>
+                <select id="idGenere">
+                    <option value="uomo">Uomo</option>
+                    <option value="donna">Donna</option>
+                    <option value="altro">Altro</option>
+                </select><br><br>
+
+                <label>Email:</label>
+                <input type="text" id="idEmail" placeholder="inserisci la tua Email"/><br><br>
+                <label>Password:</label>
+                <input type="password" id="idPassword" placeholder="inserisci la tua Password" type="password"/><br><br>
+                <label>Ripeti Password:</label>
+                <input type="password" id="idPassword2" placeholder="ripeti la tua Password" type="password"/><br><br>
+
+                <label>Ruolo:</label>
+                <select id="idRuolo" onclick="mostraInserimento()" style="color: black">
+                    <option value="acquirente">Acquirente</option>
+                    <option value="venditore">Venditore</option>
+                    <option value="amministratore" onselect="mostraInserimento()"; on>Amministratore</option>
+                </select>
+                <div id="perAmministratore" style="visibility: hidden">
+                    <label>Inserisci codice amministratore: </label>
+                    <input type="text" id="idCodAmmi">
+                </div>
+
+                <button onclick="mostraInserimento()">prova</button>
+
+                <script>
+                    function mostraInserimento(){
+                        /*if (document.querySelector("#idRuolo")==="amministratore") */
+
+                        document.querySelector("#perAmministratore").element.style.visibility = "visible";
+                        console.log("stampa");
+
+                    }
+                </script>
+            </div><br><br>
+
+            <a href="#" class="button">Registrati</a>
+            <a href="accedi.html" class="button">Annulla</a>
+        </div>
+    </div>
+    <!-- FINE REGISTRAZIONE -->
+
+    <!-- FONDO PAGINA -->
+    <footer class="footer">
+        <div class="footer-menu">
+            <a href="chiSiamo.html"> Chi siamo</a>
+            <a href="contattaci.html"> Contattaci</a>
+            <a href="privacy.html"> Privacy </a>
+        </div>
+    </footer>
+    <!-- FINE FONDO PAGINA -->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
